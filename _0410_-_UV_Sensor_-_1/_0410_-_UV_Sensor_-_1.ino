@@ -30,6 +30,8 @@
  * This contains UVA and most of UVB.
  * For more information on UV light see https://en.wikipedia.org/wiki/Ultraviolet
  * For more information on the breakout see https://www.adafruit.com/product/1918
+ * For information on the UV index scale see https://www.epa.gov/sunsafety/uv-index-scale-1
+ * Sensor datasheet: https://cdn-shop.adafruit.com/datasheets/1918guva.pdf
  *      
  *  Created on October 8 2016 by Peter Dalmaris
  * 

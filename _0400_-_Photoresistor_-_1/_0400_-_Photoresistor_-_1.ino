@@ -10,7 +10,7 @@
  * ----------
  *  - Arduino Uno
  *  - Light sensor
- *  - 1 kΩ resistor (or close)
+ *  - 10 kΩ resistor (or close)
  *  
  *  Libraries
  *  ---------
@@ -25,7 +25,7 @@
  * resistor together. Connect the LDR and resistor
  * junction to the Arduino analog pin 0. This
  * structure is called a "voltage divider".
- *                    1 kΩ
+ *                    10 kΩ
  *  5V -----OOO------\/\/\/-----GND
  *                |
  *                |
@@ -37,6 +37,7 @@
  * -----------------
  * For information on the photoresistors: https://en.wikipedia.org/wiki/Photoresistor
  * For information on the voltage divider: https://en.wikipedia.org/wiki/Voltage_divider
+ * For a voltage divider calculator go to: http://txplo.re/2e65gSX 
  *  
  * Created on October 8 2016 by Peter Dalmaris
  * 
