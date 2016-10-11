@@ -78,9 +78,9 @@
 
 // Thermistor object
 THERMISTOR thermistor(NTC_PIN,        // Analog pin
-                      10000,          // Nominal resistance at 25 ºC
+                      7500,          // Nominal resistance at 25 ºC
                       3950,           // thermistor's beta coefficient
-                      10000);         // Value of the series resistor
+                      9950);         // Value of the series resistor
 
 // Global temperature reading
 uint16_t temp;
