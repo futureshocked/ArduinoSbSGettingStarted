@@ -67,7 +67,7 @@
  * Hardware connections:
  * 
  * - (GND) to GND
- * + (VDD) to 3.3V
+ * + (VDD) to 3.3V or 5V
  * 
  * (WARNING: do not connect + to 5V or the sensor will be damaged!)
  * 

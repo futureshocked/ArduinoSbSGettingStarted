@@ -30,8 +30,9 @@
  * -----------------
  *  There are three pads on the sensor breakout that can be used
  *  to change the I2C address.
- *  MCP9808 datasheet and product page: http://www.microchip.com/wwwproducts/en/en556182
- *  Adafruit library page: https://www.adafruit.com/product/1782
+ *  MCP9808 datasheet: http://ww1.microchip.com/downloads/en/DeviceDoc/25095A.pdf
+ *  Adafruit product page: https://www.adafruit.com/product/1782
+ *  Adafruit library on Github: https://github.com/adafruit/Adafruit_MCP9808_Library
  *  
  *  Created on October 8 2016 by Peter Dalmaris
  * 

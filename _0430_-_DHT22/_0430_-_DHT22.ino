@@ -45,7 +45,8 @@
  * 
  * DHT22 datasheet: https://www.sparkfun.com/datasheets/Sensors/Temperature/DHT22.pdf
  * The Github repository for the library: https://github.com/adafruit/DHT-sensor-library
- * About the Heat Index: https://en.wikipedia.org/wiki/Heat_index
+ * About the Heat Index:   
+ * About pull up and pull down resistors:   
  * 
  * 
  * 

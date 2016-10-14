@@ -18,6 +18,7 @@
  * -----------
  * 
  * As you look at the sensor with the label facing you, the left most pin is #1
+ * 
  *  Break out    |    Arduino Uno
  *  -----------------------------
  *      1        |         5V
@@ -28,11 +29,14 @@
  * Other information
  * -----------------
  * 
+ * Datasheet: http://www.analog.com/media/en/technical-documentation/data-sheets/TMP35_36_37.pdf
+ * 
  *  Created on October 8 2016 by Peter Dalmaris
  * 
  */
 
 int sensorPin = 0; // The reading is obtained from analog pin 0 (A0)
+float supply_voltage = 5; //If you are useing a 3.3V supply voltage, change this accordingly.
  
 void setup()
 {
@@ -46,8 +50,7 @@ void loop()
  int reading = analogRead(sensorPin);  
  
  // converting that reading to voltage, for 3.3v arduino use 3.3
- float voltage = reading * 5.0;
- voltage /= 1024.0; 
+ float voltage = reading * supply_voltage / 1024;
  
  // print out the voltage
  Serial.print(voltage); Serial.println(" volts");

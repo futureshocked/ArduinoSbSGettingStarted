@@ -36,7 +36,6 @@
  *  
  *  Created on October 8 2016 by Peter Dalmaris
  *  
- * ORIGINAL HEADER from the Sparkfun library
  * 
  * This driver uses the Adafruit unified sensor library (Adafruit_Sensor),
  * which provides a common 'type' for sensor data and some helper functions.
