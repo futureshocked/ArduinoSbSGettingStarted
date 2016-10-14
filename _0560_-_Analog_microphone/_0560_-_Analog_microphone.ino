@@ -2,8 +2,7 @@
  * 
  * This sketch detects loud noises using an analog electrelet microphone.
  * 
- * This sketch was adapted from the original that comes with the 
- * Adafruit library for Arduino Step by Step by Peter Dalmaris.
+ * This sketch was written for Arduino Step by Step by Peter Dalmaris.
  * 
  * Components
  * ----------
@@ -12,7 +11,7 @@
  *  
  *  Libraries
  *  ---------
- *  - Nonw
+ *  - None
  *
  * Connections
  * -----------
