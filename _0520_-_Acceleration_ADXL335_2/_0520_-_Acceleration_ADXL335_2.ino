@@ -1,7 +1,9 @@
-/*  ADXL335 3-axis acceleration sensor demo sketch 1
+/*  ADXL335 3-axis acceleration sensor demo sketch 2
  * 
  * This sketch gets raw X-Y-Z acceleration readings from the 
  * ADXL335 sensor.
+ * 
+ * Then, using those values, the sketch calculates the orientation of the Arduino.
  * 
  * The readings come from any 3 available analog inputs, but in this
  * sketch we will use A3, A2 and A1.
@@ -97,7 +99,25 @@ void loop()
   Serial.print(y);              // print the raw value in the Y axis
   Serial.print("\t");           // prints a tab between the numbers
   Serial.print(z);              // print the raw value in the Z axis
-  Serial.println();
+  Serial.print("\t");
+//  Serial.println();
+
+  if ((x>505 && x<515) && (y>495 && y<510) && (z>610 && z<625))
+  {
+
+    Serial.println("I am horizontal");
+  }
+  else if((x>505 && x<515) && (y>485 && y<510) && (z>410 && z<430))
+  {
+    Serial.println("I am flipped;");
+    }
+  else
+  {
+    Serial.println("I don't know which way I'm sitting!");
+  }
+
+  //Can you implement the code that helps the Arduino determine other orientations,
+  //such as sitting on its long header, or on the connectors side?
   
   delay(100);              // wait 100ms for next reading
 }
