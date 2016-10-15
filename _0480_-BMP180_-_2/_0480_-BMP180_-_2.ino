@@ -101,14 +101,17 @@ void setup(void)
 {
   Serial.begin(9600);
   Serial.println("Pressure Sensor Test"); Serial.println("");
-  
+  Serial.println("Starting");
+
+    bmp.begin();
   /* Initialise the sensor */
-  if(!bmp.begin())
-  {
-    /* There was a problem detecting the BMP085 ... check your connections */
-    Serial.print("Ooops, no BMP085 detected ... Check your wiring or I2C ADDR!");
-    while(1);
-  }
+//  if(!bmp.begin())
+//  {
+//    /* There was a problem detecting the BMP085 ... check your connections */
+//    Serial.print("Ooops, no BMP085 detected ... Check your wiring or I2C ADDR!");
+//    while(1);
+//  }
+  Serial.println("Started");
   
   /* Display some basic information on this sensor */
   displaySensorDetails();

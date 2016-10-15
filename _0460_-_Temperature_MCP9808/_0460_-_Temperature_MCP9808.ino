@@ -60,7 +60,7 @@ void setup() {
   
   // Make sure the sensor is found, you can also pass in a different i2c
   // address with tempsensor.begin(0x19) for example
-  if (!tempsensor.begin()) {
+  if (!tempsensor.begin(0x19)) {
     Serial.println("Couldn't find MCP9808!");
     while (1);
   }
