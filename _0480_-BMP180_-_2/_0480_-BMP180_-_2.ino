@@ -29,7 +29,8 @@
  * Other information
  * -----------------
  *  For information on barometric pressure: https://en.wikipedia.org/wiki/Atmospheric_pressure
- *  For information on the Adafruit library is at https://www.adafruit.com/product/1603
+ *  For information on the Adafruit library is at https://github.com/adafruit/Adafruit_BMP085_Unified
+ *  Datasheet: https://github.com/sparkfun/BMP180_Breakout/raw/master/Documentation/BMP180%20Datasheet%20V2.5.pdf
  *  
  *  For best results, find the atmospheric pressure at sea level at the closest location to yours,
  *  and store it in the seaLevelPressure variable.
@@ -105,12 +106,12 @@ void setup(void)
 
     bmp.begin();
   /* Initialise the sensor */
-//  if(!bmp.begin())
-//  {
-//    /* There was a problem detecting the BMP085 ... check your connections */
-//    Serial.print("Ooops, no BMP085 detected ... Check your wiring or I2C ADDR!");
-//    while(1);
-//  }
+  if(!bmp.begin())
+  {
+    /* There was a problem detecting the BMP085 ... check your connections */
+    Serial.print("Ooops, no BMP085 detected ... Check your wiring or I2C ADDR!");
+    while(1);
+  }
   Serial.println("Started");
   
   /* Display some basic information on this sensor */
@@ -162,7 +163,7 @@ void loop(void)
     /* Then convert the atmospheric pressure, and SLP to altitude         */
     /* Update this next line with the current SLP for better results      */
 //    float seaLevelPressure = SENSORS_PRESSURE_SEALEVELHPA;
-    float seaLevelPressure = 1017.8;
+    float seaLevelPressure = 1003.4;
     Serial.print("Altitude:    "); 
     Serial.print(bmp.pressureToAltitude(seaLevelPressure,
                                         event.pressure)); 

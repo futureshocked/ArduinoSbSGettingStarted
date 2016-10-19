@@ -36,18 +36,18 @@
  * 
  * Other information
  * -----------------
- *  For information on PIR sensors: https://en.wikipedia.org/wiki/Passive_infrared_sensor
- 
+ * For information on PIR sensors: https://en.wikipedia.org/wiki/Passive_infrared_sensor
+ * Datasheet: https://www.mpja.com/download/31227sc.pdf
  *  
  *  Created on October 14 2016 by Peter Dalmaris
  * 
  */
  
-int ledPin   = 3;             // choose the pin for the LED
-int inputPin = 4;             // choose the input pin (for PIR sensor)
+int ledPin   = 4;             // choose the pin for the LED
+int inputPin = 3;             // choose the input pin (for PIR sensor)
 int pirState = true;          // we start, assuming no motion detected
 int val      = 0;             // variable for reading the pin status
-int minSecAfterPRILow = 5000; // If the sensor reports low 
+int minSecAfterPIRLow = 5000; // If the sensor reports low 
                               // remain HIGH for this many milliseconds
 long unsigned int timeTurnedLow;                  
 boolean takeLowTime;  //This variable is used to record the event where the sensor turns off
@@ -59,12 +59,12 @@ void setup() {
   pinMode(ledPin, OUTPUT);      // declare LED as output
   pinMode(inputPin, INPUT);     // declare sensor as input
 
-  takeLowTime = LOW;  // This 
+  takeLowTime = LOW;  
  
   Serial.begin(9600);
   
   Serial.println("Waiting for the sensor to warm up.");
-  delay(calibrationTime * 1000); // Convert the time from seconds to milliseconds.
+//  delay(calibrationTime * 1000); // Convert the time from seconds to milliseconds.
   Serial.println("SENSOR ACTIVE");
 }
  
@@ -89,10 +89,10 @@ void loop(){
       timeTurnedLow = millis(); //take the millis at the moment the sensor went LOW
     }
   }
-
+   
   //This block checks to see if enough time has passed after the PRI went LOW.
   //If yes, and assuming that the PIR sensor did not go HIGH again, turn off the LED
-  if(!pirState && (millis() - timeTurnedLow) > minSecAfterPRILow){
+  if(!pirState && (millis() - timeTurnedLow) > minSecAfterPIRLow){
      Serial.println("Extended time HIGH ended!");   
      digitalWrite(ledPin, LOW); // turn LED OFF  
     }

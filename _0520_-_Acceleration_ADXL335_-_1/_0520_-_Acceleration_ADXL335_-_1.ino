@@ -62,15 +62,15 @@ const int groundpin = 18;             // analog input pin 4 -- ground
 const int powerpin = 19;              // analog input pin 5 -- voltage
                                       // Analog pin 5 corresponds to digital pin 19
 
-int x, y, z;                          //These variables will hold the raw sensor values.                                      
+int x, y, z;                          // These variables will hold the raw sensor values.                                      
 
 void setup()
 {
-  //analogReference(EXTERNAL); //This configures the analog to digital converter so that it
-                               //uses the AREF voltage. If you have connected the 3.3V
-                               //pin to the AREF pin on the Arduino, then the AREF voltage is 3.3V.
+  //analogReference(EXTERNAL); // This configures the analog to digital converter so that it
+                               // uses the AREF voltage. If you have connected the 3.3V
+                               // pin to the AREF pin on the Arduino, then the AREF voltage is 3.3V.
                                // If you have pluged the breakout directly into the analog header
-                               //leave analotReference connected.
+                               // leave analogReference commented out.
 
   // Provide ground and power by using the analog inputs as normal
   // digital pins.  This makes it possible to directly connect the

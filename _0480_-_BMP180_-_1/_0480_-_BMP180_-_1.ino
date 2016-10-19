@@ -28,7 +28,8 @@
  * Other information
  * -----------------
  *  For information on barometric pressure: https://en.wikipedia.org/wiki/Atmospheric_pressure
- *  For information on the Sparkfun library is at https://learn.sparkfun.com/tutorials/bmp180-barometric-pressure-sensor-hookup-/installing-the-arduino-library
+ *  For information on the Sparkfun library is at https://github.com/sparkfun/BMP180_Breakout_Arduino_Library
+ *  Datasheet: https://github.com/sparkfun/BMP180_Breakout/raw/master/Documentation/BMP180%20Datasheet%20V2.5.pdf
  *  
  *  For best results, insert the actual height at your location in the ALTITUDE variable.
  *  
@@ -95,8 +96,6 @@
  * V1.1.2 Updates for Arduino 1.6.4 5/2015
  */
 
-// Your sketch must #include this library, and the Wire library.
-// (Wire is a standard library included with Arduino.):
 
 #include <SFE_BMP180.h>
 #include <Wire.h>
