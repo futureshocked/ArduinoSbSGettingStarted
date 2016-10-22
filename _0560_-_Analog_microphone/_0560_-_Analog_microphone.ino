@@ -35,12 +35,14 @@ int currentValue;
 int maxValue;
 int minValue;
 unsigned long timer;
-int sampleSpan = 200; // Amount in milliseconds to sample data
-int volume;           // this roughly goes from 0 to 700
+int sampleSpan  = 200; // Amount in milliseconds to sample data
+int volume;            // this roughly goes from 0 to 700
+int ledpin      = 7;
 
 void setup() 
 {
     Serial.begin(9600); 
+    pinMode (ledpin, OUTPUT);
     resetValues();
 }
 
@@ -66,9 +68,11 @@ void loop()
     if (volume > 100)
     {
       Serial.println("Loud");
+      digitalWrite(ledpin,HIGH);
     } else
     {
       Serial.println("Quiet");
+      digitalWrite(7,LOW);
     }
      
 }
