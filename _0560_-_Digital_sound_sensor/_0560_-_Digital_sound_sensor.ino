@@ -55,9 +55,10 @@ void loop ()
   {
     digitalWrite(ledpin,HIGH); // Turn the LED on to show there was a loud noise
     lastSoundDetectTime = millis(); // record the time of the sound alarm
-    // The following is so you don't scroll on the output screen
+    // This will output the LOUD message only once even if the signal remains
+    // at HIGH. This way it will not scroll out of the window with the same message.
     if (!bAlarm){
-      Serial.println("LOUD, LOUD");
+      Serial.println("LOUD!");
       bAlarm = true;
     }
   }

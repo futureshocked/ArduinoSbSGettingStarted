@@ -59,13 +59,13 @@ void loop()
 
     if (millis() - timer >= sampleSpan) {
         volume = maxValue - minValue;
-//        Serial.println(volume);
+        //Serial.println(volume);
         resetValues();
     }
 
     // I arbitrarily select 100 as the value above which the
     //microphone is picking a loud noise.
-    if (volume > 100)
+    if (volume > 400)
     {
       Serial.println("Loud");
       digitalWrite(ledpin,HIGH);

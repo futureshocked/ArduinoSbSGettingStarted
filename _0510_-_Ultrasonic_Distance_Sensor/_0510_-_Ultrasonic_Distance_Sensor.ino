@@ -29,7 +29,7 @@
  * -----------------
  *  For information on the ultrasonic transducer: https://en.wikipedia.org/wiki/Ultrasonic_transducer
  *  For information on ultrasounds: https://en.wikipedia.org/wiki/Ultrasound
- *  HC-SR04 datasheet: https://docs.google.com/document/d/1Y-yZnNhMYy7rwhAgyL_pfa39RsB-x2qR4vP8saG73rE/edit
+ *  HC-SR04 datasheet: https://docs.google.com/document/d/1Y-yZnNhMYy7rwhAgyL_pfa39RsB-x2qR4vP8saG73rE
  *  Information about the pulseIn function: https://www.arduino.cc/en/Reference/PulseIn
  *  
  *  Created on October 21 2016 by Peter Dalmaris
