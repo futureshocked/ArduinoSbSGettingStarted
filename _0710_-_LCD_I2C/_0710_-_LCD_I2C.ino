@@ -12,7 +12,6 @@
  * Components
  * ----------
  *  - Arduino Uno
- *  - 10KOhm potentiometer
  *  - An I2C to LCD backpack adaptor
  *  - jumper wires
  *  - Breadboard
@@ -40,7 +39,6 @@
  * 
  */
  
-//#include <LCD.h>
 #include <LiquidCrystal_I2C.h>
 
 LiquidCrystal_I2C lcd(0x27,16,2);
