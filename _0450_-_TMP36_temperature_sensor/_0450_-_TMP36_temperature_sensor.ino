@@ -36,15 +36,16 @@
  */
 
 int sensorPin = 0; // The reading is obtained from analog pin 0 (A0)
-float supply_voltage = 3.3; //If you are useing a 3.3V supply voltage, change this accordingly.
-                          //If you are using the 3.3V supply also uncomment line 44.
+float supply_voltage = 5; // 3.3; //If you are useing a 3.3V supply voltage, change this accordingly.
+                          // If you are using the 3.3V supply also uncomment line 44.
+                          // If you are using the 5V supply, use the value "5" here.
  
 void setup()
 {
-  analogReference(EXTERNAL); //If using 3.3V as reference by bridging it to the AREF pin,
-                             //then uncomment this line. If using 5V then this is not necessary.
-  Serial.begin(9600);  //Start the serial connection with the computer
-                       //to view the result open the serial monitor 
+ // analogReference(EXTERNAL); // If using 3.3V as reference by bridging it to the AREF pin,
+                               // then uncomment this line. If using 5V then this is not necessary.
+  Serial.begin(9600);  // Start the serial connection with the computer
+                       // to view the result open the serial monitor 
 }
  
 void loop()                    
