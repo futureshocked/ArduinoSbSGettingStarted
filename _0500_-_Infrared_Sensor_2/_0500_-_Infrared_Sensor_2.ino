@@ -64,7 +64,7 @@ void setup() {
   Serial.begin(9600);
   
   Serial.println("Waiting for the sensor to warm up.");
-//  delay(calibrationTime * 1000); // Convert the time from seconds to milliseconds.
+  delay(calibrationTime * 1000); // Convert the time from seconds to milliseconds.
   Serial.println("SENSOR ACTIVE");
 }
  
