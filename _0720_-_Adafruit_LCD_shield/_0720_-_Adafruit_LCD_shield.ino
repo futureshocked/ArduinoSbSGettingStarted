@@ -30,7 +30,7 @@
  * Other information
  * -----------------
  *  For information on the LCD chield: https://www.adafruit.com/product/714
- *  For information on the Adafruit_RGBLCDShield library: https://github.com/adafruit/Adafruit_TinyRGBLCDShield
+ *  For information on the Adafruit_RGBLCDShield library: https://github.com/adafruit/Adafruit-RGB-LCD-Shield-Library/
  *  For information on the Adafruit_MCP23017 library: https://github.com/adafruit/Adafruit-MCP23017-Arduino-Library
  *  
  *  Modified on November 18 2016 by Peter Dalmaris from the original Adafruit demo sketch.
