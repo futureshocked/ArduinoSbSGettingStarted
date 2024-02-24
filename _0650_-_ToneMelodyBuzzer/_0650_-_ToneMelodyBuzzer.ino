@@ -18,12 +18,12 @@
  *
  * Connections
  * -----------
- *  If you have a two pin passive buzzer, connect the pin marked "-"
+ *  If you have a two-pin passive buzzer, connect the pin marked "-"
  *  to Arduino GND, and the other pin to Arduino pin 8.
  * 
- *  If you have a three pin passive buzzer, connect the pin marked "-"
+ *  If you have a three-pin passive buzzer, connect the pin marked "-"
  *  to GND, the pin marked "S" to Arduino digital pin 8, and the last
- *  pin to Arduino pin 8.
+ *  pin to Arduino pin 5V.
  *  
  *  Created on November 21 2016 by Peter Dalmaris
  * 
