@@ -49,12 +49,12 @@ void setup() {
   // initialize the LED pin as an output:
   pinMode(ledPin, OUTPUT);
   // initialize the pushbutton pin as an input:
-  pinMode(buttonPin, INPUT);
+  pinMode(sensor, INPUT);
 }
 
 void loop() {
   // read the state of the pushbutton value:
-  buttonState = digitalRead(buttonPin);
+  buttonState = digitalRead(sensor);
 
   // check if the pushbutton is pressed.
   // if it is, the buttonState is HIGH:
