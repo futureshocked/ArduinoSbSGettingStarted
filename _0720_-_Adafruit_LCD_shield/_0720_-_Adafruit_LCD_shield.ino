@@ -32,8 +32,10 @@
  *  For information on the LCD chield: https://www.adafruit.com/product/714
  *  For information on the Adafruit_RGBLCDShield library: https://github.com/adafruit/Adafruit-RGB-LCD-Shield-Library/
  *  For information on the Adafruit_MCP23017 library: https://github.com/adafruit/Adafruit-MCP23017-Arduino-Library
+ *  Install both libraries via the Library manager. Search for "Adafruit RGB LCD Shield Library" and "Adafruit MCP23017".
  *  
- *  Modified on November 18 2016 by Peter Dalmaris from the original Adafruit demo sketch.
+ *  Modified on November 18, 2016, by Peter Dalmaris from the original Adafruit demo sketch.
+ *  Updated on July 1, 2024, by Peter Dalmaris.
  * 
  */
 /*********************
@@ -47,8 +49,8 @@ When a button is pressed, the backlight changes color.
 
 // include the library code:
 #include <Wire.h>
-#include <Adafruit_MCP23017.h>
-#include <Adafruit_RGBLCDShield.h>
+#include <Adafruit_MCP23X17.h> // This library has changed its name in newer versions. Old name was Adafruit_MCP2317
+#include <Adafruit_RGBLCDShield.h> 
 
 // The shield uses the I2C SCL and SDA pins. On classic Arduinos
 // this is Analog 4 and 5 so you can't use those for analogRead() anymore
